@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Project-ShoppingPortal</display-name>
+  <welcome-file-list>
+    <welcome-file>default.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>test.FetchItemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/fetchitems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servlet2</servlet-name>
+    <servlet-class>test.AddItemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/addItems</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servlet10</servlet-name>
+    <servlet-class>test.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet10</servlet-name>
+    <url-pattern>/login1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>servlet11</servlet-name>
+    <servlet-class>test.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet11</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servlet12</servlet-name>
+    <servlet-class>test.Final</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet12</servlet-name>
+    <url-pattern>/decision</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>servlet13</servlet-name>
+    <servlet-class>test.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet13</servlet-name>
+    <url-pattern>/log</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
